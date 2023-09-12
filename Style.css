@@ -1,0 +1,68 @@
+body {
+    background-image: url("Background\ image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+h1 {
+    color: #fff;
+    position: absolute;
+    size: 150px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.circle {
+    background-image: url("redd.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow:
+    0 0 30px 20px #fff,  
+    0 0 40px 30px rgb(255, 250, 118), 
+    0 0 45px 35px rgb(255, 247, 0); 
+}
+
+.planet1 {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(255, 184, 184);
+    box-shadow:
+    0 0 10px 5px #ff8383,  
+    0 0 15px 10px rgb(253, 65, 65), 
+    0 0 20px 15px rgb(255, 2, 2);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    margin: auto;
+    -webkit-animation: planet1 5s linear infinite;
+    animation: planet1 5s linear infinite;
+}
+
+@-webkit-keyframes planet1 {
+
+    0%{
+    transform: rotate(0deg)translate(-160px)rotate(0deg);
+
+    }
+    100%{
+        transform: rotate(360deg)translate(-160px)rotate(-360deg);
+
+    }
+}
